@@ -1,0 +1,7 @@
+"""learning classes"""
+
+from slithering import Snake, Earthworms, Leeches, Slugs, Lizard
+from swiming import Dolphin, Orca, Penguin, Seal, Whale
+from walking import Buffalo, Llama, Squirrel, Tiger, Wolf
+# import the python datetime module to help us create a timestamp
+from datetime import date
