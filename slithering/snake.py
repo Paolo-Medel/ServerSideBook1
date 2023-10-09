@@ -1,18 +1,9 @@
-from datetime import date
+from animal_dir.animal import Animal
 
 
-class Snake:
+class Snake(Animal):
     """Creating a class for snake
     """
-
-    def __init__(self, name, species, food):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.slithering = True
-        self.food = food
-
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')

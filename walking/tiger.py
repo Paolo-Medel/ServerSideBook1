@@ -1,18 +1,12 @@
-from datetime import date
+from animal_dir.animal import Animal
 
 
-class Tiger:
+class Tiger(Animal):
     """Creating a class for Tigers
     """
 
-    def __init__(self, name, species, shift):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+    # Remove redundant properties from Llama's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift # stays on Llama because not all animals have shifts
         self.walking = True
-        self.shift = shift
-
-    def food(self):
-        return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
