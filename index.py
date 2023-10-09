@@ -8,3 +8,7 @@ from datetime import date
 
 Buffy = Buffalo("buffy", "great-plains", date.today(), "morning")
 print(f"{Buffy.name} will have the {Buffy.shift} shift")
+
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow")
+
+print(miss_fuzz)
